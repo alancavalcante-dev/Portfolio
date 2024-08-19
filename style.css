@@ -1,0 +1,318 @@
+/* Raiz da página */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Cabeçalho */
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#nav {
+    background: linear-gradient(to bottom, #dcdcdc, #1e1e1e81);
+    background: linear-gradient(to right, #dcdcdc, #1c1c1c7c);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1;
+    
+}
+
+.navDev {
+    background-color: black;
+    width: 350px;
+    height: 4rem;
+    color: white;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .navDev {
+        display: none;
+    }
+}
+
+.navDev p {
+    margin-top: 5px;
+}
+
+.navNome {
+    font-family: Consolas, monospace;
+    font-size: 2vw;
+    color: rgb(0, 30, 200);
+    top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.navNome p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+    .navNome {
+        display: none;
+        width: 0;
+    }
+}
+
+.navNumero {
+    background-color: black;
+    width: 350px;
+    height: 4rem;
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navNumero img {
+    width: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .navNumero {
+        width: 100vw;
+    }
+}
+
+.navNumero p {
+    margin-top: 15px;
+}
+
+/* Apresentação */
+#apresentacao {
+    position: relative;
+    top: 2rem;
+    padding-top: 80px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    #apresentacao {
+        display: block;
+    }
+}
+
+.titulospagina {
+    padding-top: 80px;
+}
+
+.colunaEu {
+    font-family: Consolas, Arial, Helvetica, sans-serif;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .colunaEu {
+        width: auto;
+        position: relative;
+        align-items: center;
+    }
+}
+
+.colunaFoto {
+    margin: 10px;
+}
+
+.colunaFoto img {
+    width: 200px;
+}
+
+@media screen and (max-width: 900px) {
+    .colunaFoto img {
+        position: relative;
+        align-items: center;
+    }
+}
+
+.colunaTrabalho {
+    font-family: Consolas, Arial, Helvetica, sans-serif;
+    width: 400px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .colunaTrabalho {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: auto;
+        position: relative;
+        align-items: center;
+    }
+}
+
+/* Experiências */
+.tecnologias {
+    margin-top: 4rem;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+}
+
+.tecnologias h3 {
+    font-family: Andale Mono, monospace, Arial, Helvetica, sans-serif;
+}
+
+
+.tecnologias img {
+    margin: 0.5rem;
+    width: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+
+.tecnologias img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Experiências */
+.tecnologias-exp {
+    margin-top: 4rem;
+    display: inline-block;
+    align-items: center;
+    width: 80%;
+}
+
+#em-desenvolvimento {
+    margin: 0 auto;
+    width: 280px;
+}
+
+#em-desenvolvimento li{
+    text-align: left;
+}
+
+.tecnologias-exp h3 {
+    font-family: Andale Mono, monospace, Arial, Helvetica, sans-serif;
+}
+
+.tecnologias-exp img {
+    margin: 0.5rem;
+    width: 250px;
+    transition: 0.2s ease-in-out;
+}
+
+.tecnologias-exp img:hover {
+    transform: scale(1.1);
+}
+
+#img-bootstrap {
+    width: 100px;
+}
+
+
+
+/* Acadêmico */
+#academico {
+    margin: 1rem 0.5rem;
+}
+
+#academico h3 {
+    font-family: Andale Mono, monospace, Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+}
+
+.portfolio {
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.portfolio button{
+    margin: 0 1rem;
+}
+
+.portfolio button:hover {
+    background: #0a0ace;
+    transition: 0.2s ease-in-out;
+}
+
+/* Contato */
+#contato {
+    color: whitesmoke;
+    width: 100%;
+    height: 230px;
+    background-image: url("imagens/fundopreto.jpg");
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    #contato {
+        height: 300px;
+    }
+}
+
+#contato h3,
+#contato p {
+    position: relative;
+    top: 2rem;
+}
+
+.endereco {
+    color: rgb(161, 179, 255);
+}
+
+.endereco:hover {
+    color: red
+}
+
+a {
+    text-decoration: none;
+    color: blue
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+a:focus {
+    color: rgb(0, 175, 0)
+}
+
+
+#mudar-website {
+    width: 350px;
+}
+
+.carousel-inner .carousel-item img{
+    margin: auto;
+    border: 2px solid black;
+}
+
+
+
+#assistenteoffice{
+    height: 200px;
+    width: 200px;
+}
+
+#office{
+    height: 330px;
+    width: 280px;
+}
+
+
+#salvado{
+    height: 150px;
+    width: 160px;
+}
+
+#ativado{
+    height: 300px;
+    width: 300px;
+}
